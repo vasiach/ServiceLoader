@@ -7,6 +7,6 @@ services:
     network_mode: "host"
     volumes:
       - ./mysite:/mysite
-    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+    command: sh -c "python manage.py runserver"
       - DEBUG=1
       # - DATABASE_URL='mysql://vasiac:p@SSw0rd!!@192.168.56.102:3306/DWForecast'
