@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  serviceloader:
+    build:
+      context: .
+    network_mode: "host"
+    volumes:
+      - ./mysite:/mysite
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+      - DEBUG=1
+      # - DATABASE_URL='mysql://vasiac:p@SSw0rd!!@192.168.56.102:3306/DWForecast'
